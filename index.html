@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Yarış Zekası</title><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0b1020"><meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icon-192.png">
 <style>:root{--bg:#0b1020;--panel:#121a2f;--text:#edf2ff;--muted:#9fb0d0;--accent:#f6c453}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Arial,sans-serif;
 padding:max(18px,env(safe-area-inset-top)) 16px max(18px,env(safe-area-inset-bottom))}
@@ -15,7 +15,7 @@ h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);margin:0 0 20px;font-si
 <script>
 const L=document.getElementById("liste"),S=document.getElementById("st"),G=document.getElementById("gun");
 function tr(t){const [y,m,d]=t.split("-");return d+"/"+m+"/"+y}
-fetch("data/index.json?t="+Date.now()).then(r=>r.json()).then(j=>{
+fetch("index.json?t="+Date.now()).then(r=>r.json()).then(j=>{
  G.textContent="Son güncelleme: "+tr(j.guncelleme);
  L.innerHTML="";
  j.hipodromlar.forEach(h=>{const d=document.createElement("div");d.className="hip";

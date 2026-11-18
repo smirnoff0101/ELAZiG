@@ -8,11 +8,11 @@
    "sayfalar": [
     {
      "ad": "Final (Gerçek Mesafe)",
-     "dosya": "data/elazig/20261118_final.html"
+     "dosya": "elazig_final.html"
     },
     {
-     "ad": "Hasta Olduğumuz Final",
-     "dosya": "data/elazig/20261118_hasta.html"
+     "ad": "V14 Kaynak 100M Hız",
+     "dosya": "elazig_v14.html"
     }
    ]
   }
